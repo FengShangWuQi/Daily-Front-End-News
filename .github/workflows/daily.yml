@@ -1,22 +1,17 @@
 name: daily
 on:
   push:
-    branches:
-      - dev
-      - master
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: dev
       - uses: actions/setup-node@v2-beta
         with:
-          node-version: '15'
+          node-version: "15"
       - run: yarn
       - run: yarn generate
 
@@ -40,5 +35,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
         with:
           filename: issue-template.md
-      - run: 'echo Created issue number ${{ steps.create-issue.outputs.number }}'
-      - run: 'echo Created ${{ steps.create-issue.outputs.url }}'
+      - run: "echo Created issue number ${{ steps.create-issue.outputs.number }}"
+      - run: "echo Created ${{ steps.create-issue.outputs.url }}"

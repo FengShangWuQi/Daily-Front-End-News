@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "daily-front-end-news",
+  "description": "前端日报",
+  "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
+  "scripts": {
+    "format": "prettier --write .'",
+    "generate": "ts-node daily.ts",
+    "start": "ts-node script.ts"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "pre-push": "tsc",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "date-fns": "2.16.1",
+    "fs-extra": "9.0.1",
+    "puppeteer": "5.4.1"
+  },
+  "devDependencies": {
+    "@fengshangwuqi/dev-deps": "1.0.20",
+    "@fengshangwuqi/logger": "1.0.3",
+    "@fengshangwuqi/ts-config": "1.0.2",
+    "@types/fs-extra": "9.0.2",
+    "@types/puppeteer": "3.0.4",
+    "dotenv": "8.2.0"
+  },
+  "license": "MIT"
+}
