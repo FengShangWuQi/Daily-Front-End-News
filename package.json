@@ -25,7 +25,7 @@
     "@fengshangwuqi/logger": "1.0.3",
     "@fengshangwuqi/ts-config": "1.0.2",
     "@types/fs-extra": "9.0.4",
-    "@types/puppeteer": "5.4.0",
+    "@types/puppeteer": "5.4.2",
     "date-fns": "2.16.1",
     "dotenv": "8.2.0",
     "fs-extra": "9.0.1",
