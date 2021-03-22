@@ -194,10 +194,10 @@
   resolved "https://registry.npm.taobao.org/@fengshangwuqi/ts-config/download/@fengshangwuqi/ts-config-1.0.4.tgz#dc37730999ee6444912c40c5ddb3b39bca92591d"
   integrity sha1-3DdzCZnuZESRLEDF3bOzm8qSWR0=
 
-"@types/fs-extra@9.0.6":
-  version "9.0.6"
-  resolved "https://registry.npm.taobao.org/@types/fs-extra/download/@types/fs-extra-9.0.6.tgz#488e56b77299899a608b8269719c1d133027a6ab"
-  integrity sha1-SI5Wt3KZiZpgi4JpcZwdEzAnpqs=
+"@types/fs-extra@9.0.8":
+  version "9.0.8"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.8.tgz#32c3c07ddf8caa5020f84b5f65a48470519f78ba"
+  integrity sha512-bnlTVTwq03Na7DpWxFJ1dvnORob+Otb8xHyUqUWhqvz/Ksg8+JXPlR52oeMSZ37YEOa5PyccbgUNutiQdi13TA==
   dependencies:
     "@types/node" "*"
 

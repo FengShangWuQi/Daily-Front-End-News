@@ -23,7 +23,7 @@
     "@fengshangwuqi/dev-deps": "1.0.23",
     "@fengshangwuqi/logger": "1.0.5",
     "@fengshangwuqi/ts-config": "1.0.4",
-    "@types/fs-extra": "9.0.6",
+    "@types/fs-extra": "9.0.8",
     "date-fns": "2.19.0",
     "fs-extra": "9.1.0"
   },
