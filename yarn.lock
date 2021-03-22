@@ -182,10 +182,10 @@
     ts-node "9.1.1"
     typescript "4.1.3"
 
-"@fengshangwuqi/logger@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.npm.taobao.org/@fengshangwuqi/logger/download/@fengshangwuqi/logger-1.0.5.tgz#e125b573fd4e3b46a63646950596cbf027d05b9b"
-  integrity sha1-4SW1c/1OO0amNkaVBZbL8CfQW5s=
+"@fengshangwuqi/logger@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@fengshangwuqi/logger/-/logger-1.0.6.tgz#9dbfd6026dd7c29b4e7d59183df11076099e3372"
+  integrity sha512-XWTZs41rJ11Z6lHD8QpnCWkKMER7Dgfb+6fRazBmwzh7yan0MNtt9RSHkgMEuL1E/c9HV9Um8aSeSmLKChdA+g==
   dependencies:
     chalk "4.1.0"
 
