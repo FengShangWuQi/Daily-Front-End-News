@@ -1,12 +1,12 @@
 import { join } from "path";
 import { copy, readFile, outputFile } from "fs-extra";
 import { format } from "date-fns";
-import * as logger from "@fengshangwuqi/logger";
+import { logger } from "@fengshangwuqi/logger";
 
 (async () => {
   const daily = format(new Date(), "yyyy/MM/dd");
 
-  logger.info(`updateAt: ${new Date()}`);
+  logger(`updateAt: ${new Date()}`).withLevel("INFO");
 
   const issueTitle = `title: 日报@${daily}`;
   const issueMeta = ["---", issueTitle, "---"].join("\n");
@@ -20,8 +20,8 @@ import * as logger from "@fengshangwuqi/logger";
     const content = await readFile(issueFile, "utf-8");
     await outputFile(issueFile, [issueMeta, content].join("\n"));
 
-    logger.success("generate issue template");
+    logger("generate daily").withLevel("SUCCESS");
   } catch (err) {
-    logger.warn("today has no news.");
+    logger("today has no news.").withLevel("WARNING");
   }
 })();
