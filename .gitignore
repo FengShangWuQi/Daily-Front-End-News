@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/vim,node,linux,macos,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=vim,node,linux,macos,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/node,vim,visualstudiocode,macos,linux
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,vim,visualstudiocode,macos,linux
 
 ### Linux ###
 *~
@@ -24,8 +24,7 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
-
+Icon
 
 # Thumbnails
 ._*
@@ -102,6 +101,9 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+# Optional stylelint cache
+.stylelintcache
+
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
@@ -133,6 +135,14 @@ typings/
 .nuxt
 dist
 
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+# rollup.js default build output
+dist/
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
@@ -157,6 +167,10 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+# Temporary folders
+tmp/
+temp/
+
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
@@ -179,8 +193,10 @@ tags
 
 ### VisualStudioCode ###
 .vscode/*
+!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
+!.vscode/extensions.json
 *.code-workspace
 
 ### VisualStudioCode Patch ###
@@ -188,4 +204,4 @@ tags
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/vim,node,linux,macos,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/node,vim,visualstudiocode,macos,linux
