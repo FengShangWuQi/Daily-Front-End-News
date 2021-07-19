@@ -24,7 +24,7 @@
     "@commitlint/config-conventional": "12.1.4",
     "@fengshangwuqi/logger": "1.0.12",
     "@fengshangwuqi/ts-config": "1.0.4",
-    "@types/fs-extra": "9.0.11",
+    "@types/fs-extra": "9.0.12",
     "date-fns": "2.21.3",
     "fs-extra": "10.0.0",
     "husky": "6.0.0",
